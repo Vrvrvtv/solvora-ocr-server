@@ -170,7 +170,7 @@
       const formData = new FormData();
       formData.append('image', file);
 
-      const res = await fetch('http://localhost:3000/ocr', {
+      const res = await fetch('https://solvora-ai.onrender.com/ocr', {
         method: 'POST',
         body: formData
       });

@@ -21,7 +21,7 @@ async function ensureWorker() {
   return worker;
 }
 
-app.get('/ocr', (req, res) => res.send('Solvora OCR server alive'));
+app.get('/', (req, res) => res.send('Solvora OCR server alive'));
 
 app.post('/ocr', upload.single('image'), async (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No file uploaded' });

@@ -116,7 +116,7 @@
     formData.append("image", file);
 
     try {
-        const res = await fetch("http://192.168.101.9:3000/ocr", {
+        const res = await fetch("https://solvora-ai.onrender.com/ocr", {
             method: "POST",
             body: formData
         });

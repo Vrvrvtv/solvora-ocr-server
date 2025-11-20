@@ -4,9 +4,7 @@ const cors = require('cors');
 const multer = require('multer');
 const { createWorker } = require('tesseract.js');
 const fs = require('fs');
-
 const app = express();
-import cors from "cors";
 app.use(cors());
 const upload = multer({ storage: multer.memoryStorage() });
 
